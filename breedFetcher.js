@@ -1,8 +1,7 @@
-const fs = require("fs");
 const request = require("request");
 
 const breedType = process.argv[2];
-const url = `https://api.thecatapi.com/v1/breed/search?q=${breedType}`;
+const url = `https://api.thecatapi.com/v1/breeds/search?q=${breedType}`;
 
 request(url, (error, response, body) => {
   // console.log(typeof body);
